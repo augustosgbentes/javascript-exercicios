@@ -11,7 +11,7 @@
 // != : (DIFERENTE)
 
 //  || (OR OU) retorna verdadeiro se pelo menos UMA das expressões fornecidas for verdadeira.
-// && (AND E) testa se as DUAS (ou mais) expressões comparadas são veridadeiras.
+// && (AND E) testa se as DUAS (ou mais) expressões comparadas são verdadeiras.
 // ++ (increment) aumenta um do valor inicial do i
 // -- (decrement) Diminui um do valor inicial do i
 
