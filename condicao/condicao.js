@@ -35,6 +35,9 @@
 const pessoa = 'Augusto'
 let idade = 9
 
+var nome = window.prompt('qual é seu nome?')
+window.alert('é um prazer te conhecer' + nome)
+
 
 if (idade > 18) {                // "SE A IDADE FOR MAIOR QUE 18, MOSTRE "VERDADE, É MAIOR QUE 18"
    console.log('verdade', idade)
@@ -48,7 +51,7 @@ else {                          // "CASO NÃO SEJA MAIOR QUE 18, MOSTRE "FALSO, 
 
 
 let num1 = 2     // VÁRIAVEL 1 (num1)
-let num2 = 3     // VÁRIAVEL 2 (num2)
+let num2 = 2     // VÁRIAVEL 2 (num2)
 
 const resultado = num1 + num2   // "QUERO QUE A PALAVRA "RESULTADO" REPRESENTE A SOMA ENTRE AS VARIÁVEIS (num1) e (num2)"  
 
@@ -178,7 +181,7 @@ if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra ==
 
 // Escreva um programa que verifica se um ano é bissexto.
 
-let ano = "2020"                   // VARIÁVEL (ano) = 2020
+let ano = 2020                  // VARIÁVEL (ano) = 2020
 
 if(ano % 4 === 0){                  // SE A VARIÁVEL (ano) FOR UM NÚMERO DIVISÍVEL POR 4, MOSTRE : "BISSEXTO"
     console.log(ano ,"bissexto");

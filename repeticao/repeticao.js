@@ -5,8 +5,9 @@
 // Multiplicar: *
 // Resto: %     -> RESTO DA DIVISÃO
 
-// += : soma continua
 
+// = : recebe [receba!]
+// += : soma continua
 // === : "ISSO SIGNIFICA ISSO !!!!!!" ex: letra === a (diga que a palavra "letra" tenha o mesmo significado/valor de a) (IGUAL)
 // != : (DIFERENTE)
 

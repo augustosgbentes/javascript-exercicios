@@ -1,9 +1,10 @@
 /**
  * document.createElement 
- * -> criar um elemento no documento
+ * -> criar um elemento no documento [ex: cria uma div pro HTML utilizando o javascript. ele sobrepõe.]
  * 
  * node.appendChild 
- * -> Adicionar o elemento como ÚLTIMO nó do pai
+ * -> Adicionar o elemento como ÚLTIMO nó do pai [adiciona um elemento dentro de outro elemento como filho]
+ * exemplo: div.appendChild(h1) [colocamos o h1 dentro da div]
  * 
  * node.insertBefore 
  * -> inserir um elemento antes de outro elemento
@@ -36,7 +37,7 @@
 
 
 /**
- * Exercício
+ *  EXERCÍCIO
  * - Criar uma div pelo JS
  * - Incluir essa div no body
  * - Incluir um H1
@@ -47,14 +48,27 @@
  * - Colocar o seu nome no elemento P
  */
 
-const newDiv = document.createElement('div')     // crie uma const(variável) newDiv (nome da variável) no HTML (document.createElement)
-const h1 = document.createElement('h1')         //   "      ''        ''     h1 (nome da variável)      ''      ''      ''      ''    
-const hr = document.createElement('hr')        //  
-const p = document.createElement('p')
-const body = document.body                     // variável Body(ja existe body no html)
-body.appendChild(newDiv)                     // coloca o body
-h1.innerText = 'Hello World'                //
-p.innerHTML = 'Augusto Bentes'
-newDiv.appendChild(h1)                       // faz o h1 (titulo) ser adicionado no HTML
-newDiv.appendChild(hr)                      // faz a linha hr ser adicionada no HTML
-newDiv.appendChild(p)                      // faz o p (paragrafo) ser adicionado no HTML
+const newDiv = document.createElement('div') // crie uma variável(const) de nome newDiv que tenha o valor de div no HTML
+const h1 = document.createElement('h1')     // crie uma variável(const) de nome h1 que tenha o valor de h1 no HTML (h1= titulo)
+const hr = document.createElement('hr')    // crie uma variável(const) de nome hr que tenha o valor de hr no HTML (hr= linha)
+const p = document.createElement('p')     // crie uma variável(const) de nome p que tenha o valor de p no html (p=paragrafo)
+const newDiv2 = document.createElement('div')
+const h2 = document.createElement('h2')
+
+const body = document.body    // pelo fato de já existir o body no HTML, utlizamos document.body ou document.querySelector('body')
+
+body.appendChild(newDiv)     // coloca o body como pai da newDiv (coloca a div dentro do body)
+body.appendChild(newDiv2)
+newDiv.appendChild(h1)      // coloca a div como pai do h1 (coloca o h1 dentro da div)
+newDiv.appendChild(hr)     //  ""    ''  ''    ''  '' hr (coloca o hr dentro da div)
+newDiv.appendChild(p)     //  ''       ''     ''  '' p (coloca o p dentro da div)
+newDiv2.appendChild(h2)
+newDiv2.appendChild(newDiv)
+
+
+h1.innerHTML = 'Hello World'
+p.innerHTML = 'Lil B'
+h2.innerHTML = "TESTE"
+
+newDiv.insertBefore(newDiv2)
+
